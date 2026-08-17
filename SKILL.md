@@ -126,6 +126,10 @@ DES、RC4）、TLS 未使用国密套件、密钥长期不轮换、日志无完�
 - [scripts/calc_conformance.py](scripts/calc_conformance.py) — 按测评项判定计算**符合率与总体结论**：
   `python scripts/calc_conformance.py --json results.json`
   （JSON 格式见脚本头注释；`--raw` 输出结构化结果供程序使用；阈值可用 `--pass-rate` / `--fail-rate` 调整，实际以 GM/T 0116 为准）
+- [scripts/gen_report.py](scripts/gen_report.py) — 从测评结果生成**报告初稿**（Markdown）：
+  `python scripts/gen_report.py --json input.json -o report.md`
+  （输入含 project/items/fixes 三部分，格式见脚本头注释；输出含项目概况、逐项结果表、
+  符合率汇总、总体结论、整改建议，需人工核实后定稿）
 
 > 脚本用于提效与计算辅助，**最终判定与报告结论必须人工核实标准原文后确认**。
 

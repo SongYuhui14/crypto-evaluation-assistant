@@ -38,7 +38,8 @@ crypto-evaluation-assistant/
 ├── LICENSE                      # MIT 协议
 ├── scripts/                     # 零依赖 Python 工具
 │   ├── gen_checklist.py         # 按等级+行业生成检查清单
-│   └── calc_conformance.py      # 符合率计算与结论判定
+│   ├── calc_conformance.py      # 符合率计算与结论判定
+│   └── gen_report.py            # 从测评结果生成报告初稿
 └── references/
     ├── standards-map.md         # 密评标准体系对照表
     ├── checklist.md             # 通用密评检测检查清单
