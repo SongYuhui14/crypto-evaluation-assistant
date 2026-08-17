@@ -76,7 +76,7 @@ metadata:
 ## 工作流
 
 1. **明确测评对象**：先问清楚信息系统边界、等级保护级别、业务类型、已部署的密码产品清单。信息不全时先补充，不要跳过。
-2. **建立检查清单**：按 [references/checklist.md](references/checklist.md) 对照被测系统逐项核对，逐项记录证据（配置截图、日志、证书、产品认证信息、访谈记录等）。
+2. **建立检查清单**：按 [references/checklist.md](references/checklist.md) 对照被测系统逐项核对；**金融 / 政务 / 能源行业**优先使用 [references/checklist/](references/checklist/) 下的垂直行业清单（finance.md / government.md / energy.md），逐项记录证据（配置截图、日志、证书、产品认证信息、访谈记录等）。
 3. **逐项判定**：每个测评项给出 符合 / 部分符合 / 不符合 / 不适用，并写明判定依据。
 4. **汇总结论**：按 GM/T 0116 规定的符合率计算方法与阈值给出总体结论（符合 / 基本符合 / 不符合），并明确指出拉低结论的关键短板。
 5. **输出报告**：按 [references/report-template.md](references/report-template.md) 生成报告；整改建议要具体、可执行、按优先级排序。
@@ -118,7 +118,11 @@ DES、RC4）、TLS 未使用国密套件、密钥长期不轮换、日志无完�
 
 ## 参考文件
 
-- [references/checklist.md](references/checklist.md) — 密评检测检查清单（按层面 / 管理分组）
+- [references/standards-map.md](references/standards-map.md) — 密评标准体系对照表（39786 ↔ 0115/0116）
+- [references/checklist.md](references/checklist.md) — 通用密评检测检查清单（按层面 / 管理分组）
+- [references/checklist/finance.md](references/checklist/finance.md) — 金融行业垂直清单
+- [references/checklist/government.md](references/checklist/government.md) — 政务行业垂直清单
+- [references/checklist/energy.md](references/checklist/energy.md) — 能源行业垂直清单
 - [references/report-template.md](references/report-template.md) — 测评报告模板
 - [references/crypto-basics.md](references/crypto-basics.md) — 国密算法速查与常见误用
 - [references/common-issues.md](references/common-issues.md) — 高频问题与整改建议
