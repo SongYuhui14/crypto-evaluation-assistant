@@ -36,8 +36,16 @@ crypto-evaluation-assistant/
 ├── SKILL.md                     # 技能主文件（frontmatter + 指令）
 ├── README.md                    # 本文件
 ├── LICENSE                      # MIT 协议
+├── scripts/                     # 零依赖 Python 工具
+│   ├── gen_checklist.py         # 按等级+行业生成检查清单
+│   └── calc_conformance.py      # 符合率计算与结论判定
 └── references/
-    ├── checklist.md             # 密评检测检查清单（含取证方式）
+    ├── standards-map.md         # 密评标准体系对照表
+    ├── checklist.md             # 通用密评检测检查清单
+    ├── checklist/               # 行业垂直清单
+    │   ├── finance.md           # 金融行业
+    │   ├── government.md        # 政务行业
+    │   └── energy.md            # 能源行业
     ├── report-template.md       # 测评报告模板（含撰写要点）
     ├── crypto-basics.md         # 国密算法速查与常见误用
     └── common-issues.md         # 高频问题与整改建议

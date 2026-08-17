@@ -116,6 +116,19 @@ DES、RC4）、TLS 未使用国密套件、密钥长期不轮换、日志无完�
 - 整改建议遵循"先说最危险、最影响结论的项"，每条建议尽量给出落地方式。
 - 学习模式输出要"先给判断依据，再给结论"，并主动指出易错点。
 
+## 工具脚本（scripts/）
+
+技能自带零依赖 Python 工具，供检测与报告阶段使用（需 Python 3，标准库即可）：
+
+- [scripts/gen_checklist.py](scripts/gen_checklist.py) — 按**等级 + 行业**生成检查清单：
+  `python scripts/gen_checklist.py --level 3 --industry finance`
+  （行业：generic / finance / government / energy；`--list` 查看可选行业）
+- [scripts/calc_conformance.py](scripts/calc_conformance.py) — 按测评项判定计算**符合率与总体结论**：
+  `python scripts/calc_conformance.py --json results.json`
+  （JSON 格式见脚本头注释；`--raw` 输出结构化结果供程序使用；阈值可用 `--pass-rate` / `--fail-rate` 调整，实际以 GM/T 0116 为准）
+
+> 脚本用于提效与计算辅助，**最终判定与报告结论必须人工核实标准原文后确认**。
+
 ## 参考文件
 
 - [references/standards-map.md](references/standards-map.md) — 密评标准体系对照表（39786 ↔ 0115/0116）
