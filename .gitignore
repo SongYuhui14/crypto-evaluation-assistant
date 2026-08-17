@@ -1,0 +1,19 @@
+# 环境与密钥
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 检测证据（现场数据可能涉密，默认不入库）
+evidence/
+*.pcap
+*.key
+*.pem
+
+# 系统
+Thumbs.db
+.DS_Store
