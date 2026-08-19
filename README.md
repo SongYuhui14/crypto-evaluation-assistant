@@ -105,6 +105,16 @@ crypto-evaluation-assistant/
 - 不带技能基线：48/50（最典型的差距：符合率手算易错，脚本计算准确且产物可审计）
 - 评测机制与结果详见 [evals/](evals/) 与技能工作区
 
+
+## 相关作品
+
+- [ai-security-assistant](https://github.com/SongYuhui14/ai-security-assistant) — AI 安全评估
+- [dsh-plugin-conflict-advisor](https://github.com/SongYuhui14/dsh-plugin-conflict-advisor) — 插件冲突顾问
+- [dsh-plugin-chooser](https://github.com/SongYuhui14/dsh-plugin-chooser) — 插件评分推荐
+- [dsh-plugin-compat-checker](https://github.com/SongYuhui14/dsh-plugin-compat-checker) — 插件兼容测试
+- [dsh-code-vetter](https://github.com/SongYuhui14/dsh-code-vetter) — AI 代码安全审查
+- [dsh-publisher](https://github.com/SongYuhui14/dsh-publisher) — 一键发布助手
+
 ## 许可
 
 [MIT](LICENSE)
