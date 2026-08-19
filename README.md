@@ -2,6 +2,8 @@
 
 > 📦 仓库地址：https://github.com/SongYuhui14/crypto-evaluation-assistant
 
+![演示](docs-demo.png)
+
 DeepSeek Harness / Claude 技能（Skill）：辅助开展**商用密码应用安全性评估（密评）**的检测、分析、报告与学习工作。
 
 面向**密评工程师 / 实习生 / 备考者**：从检查清单生成到符合率计算再到报告初稿，形成一条完整的**"检测 → 判定 → 报告"工具链**。
